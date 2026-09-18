@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Sheryians Coding School.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="favicon-96x96.png">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo lg:text-8Xl md:text-4xl sm:text-2xl">
+            <img height="35px" src="https://dfdx9u0psdezh.cloudfront.net/logos/full-logo.webp " alt="">
+        </div>
+
+
+
+        <div class="nav2 lg:text-8Xl md:text-4xl sm:text-2xl">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Bootcamp</a>
+            <a href="#">Request Callback classroom</a>
+        </div>
+        <div class="nav3 lg:text-8Xl md:text-4xl sm:text-2xl">
+            <button type="submit">Sig.In</button>
+        </div>
+
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>
+
+
+    <main>
+        <section class="section1">
+
+
+            <div class="left">
+                <a href="#">CODE.CREATE.CONQUER</a>
+                <h1>2.0 Job Ready AI Powered Cohort</h1>
+                <p>Become a job-ready softwore engineer with our
+                    Cohort 2.0 An intensive program coberingMERN stack
+                    development,DSA,and aptitude training </p>
+
+
+                <h3 class="Price" style="margin-top: 25px;">Price <span class="orange">₹5999</span><span class="lgray">₹
+                        11999</span><span style="font-size: 18px;">(+GST)</span></h3>
+
+
+                <div class="buybutton">
+                    <button class="buy"> Buy Now <i class="fa-solid fa-arrow-right-long"></i></button>
+                    <button class="Learn">Learn More <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+
+
+
+            <div class="right">
+
+                <!-- अब यह सीधे आपके यूट्यूब वीडियो पर रीडायरेक्ट करेगा बिना किसी एरर के -->
+                <a href="https://youtu.be/cVrbFvIXwkk?si=EFwHAaYMI_wjDVF4" target="_blank" class="video-box"
+                    style="display: block; text-decoration: none;">
+                    <div class="thumbnail-wrapper" style="position: relative;">
+                        <img src="https://img.youtube.com/vi/cVrbFvIXwkk/maxresdefault.jpg" alt="Thumbnail"
+                            style="width: 100%; height: 315px; object-fit: cover; display: block;">
+                        <div class="video-play">▶</div>
+                    </div>
+                </a>
+                <div class="tags lg:text-8xl text-4xl text-2xl">
+                    <h4><Button>Job Ready</Button></h4>
+                    <h4><Button>MERN Stack</Button></h4>
+                    <h4><Button>DSA with JS</Button></h4>
+                    <h4><Button>Placement Focused</Button></h4>
+                    <h4><Button>AI Powered</Button></h4>
+
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <h1>Get Placed</h1>
+            <h1 class="bloom">Get Placed</h1>
+
+            <h3>with job ready AI powered Cohort</h3>
+
+            <div class="webpage">
+           <!-- <img src="https://dfdx9u0psdezh.cloudfront.net/Visual-Icons/jobreadyGraphic.webp"> -->
+           
+            </div>
+
+
+        </section>
+    </main>
+
+
+
+
+
+
+    <script>
+        // const menuButton = document.querySelector('.menu');
+        // const navLinks = document.querySelector('.nav2');
+        // const loginBtn = document.querySelector('.nav3');
+
+        // menuButton.addEventListener('click', () => {
+        //     navLinks.classList.toggle('active');
+        //     loginBtn.classList.toggle('active');
+        // });
+
+        // मान लेते हैं कि आपका मेन्यू बटन और बाकी चीजें इस तरह से सिलेक्टेड हैं:
+        const menuBtn = document.querySelector('nav .menu');
+        const nav2 = document.querySelector('nav .nav2');
+        const nav3 = document.querySelector('nav .nav3');
+
+        menuBtn.addEventListener('click', () => {
+            // 1. दोनों में active क्लास चालू/बंद करना
+            nav2.classList.toggle('active');
+            nav3.classList.toggle('active');
+
+            // 🔴 जादू की लाइन: अगर मोबाइल पर मेन्यू खुला है, तो लॉगिन बटन को उठाओ और काले बॉक्स के अंदर सबसे नीचे डाल दो!
+            if (nav2.classList.contains('active') && window.innerWidth <= 850) {
+                nav2.appendChild(nav3); // यह nav3 को उठाकर सीधे nav2 के अंदर सबसे नीचे बैठा देगा
+            }
+        });
+
+    </script>
+
+</body>
+
+
+
+
+</html>
